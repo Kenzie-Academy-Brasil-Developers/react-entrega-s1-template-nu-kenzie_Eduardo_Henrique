@@ -11,7 +11,7 @@ export function Cards({ name, value, typeValue, id, items, setItems }) {
       <div className="container--content">
         <div className="content--name--value">
           <h2>{name}</h2>
-          <span>R$ {value}</span>
+          <span>R$ {value.toFixed(2)}</span>
         </div>
         <span>{typeValue}</span>
         <button

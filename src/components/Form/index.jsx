@@ -12,7 +12,7 @@ export function Form({setItems,items}) {
     
     const newItem = {
       name:name,
-      value:Number(value).toFixed(2),
+      value:Number(value),
       typeValue:typeValue,
       uuid:uuid()
     }
