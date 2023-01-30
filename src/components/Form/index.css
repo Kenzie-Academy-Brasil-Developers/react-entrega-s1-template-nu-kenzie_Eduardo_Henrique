@@ -1,0 +1,117 @@
+.form--content {
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+
+  gap: 21px;
+
+  border: 1px solid var(--color-grey-2);
+  border-radius: var(--default-radius);
+
+  padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+}
+.container--add--description {
+  width: 100%;
+  height: 110px;
+
+  display: flex;
+  flex-direction: column;
+}
+.container--add--description > input {
+  width: 100%;
+  height: 50px;
+
+  font-size: var(--text-size-title-3);
+
+  background: var(--color-grey-2);
+
+  border: none;
+  border-radius: var(--default-radius);
+
+  padding-left: 0.5rem;
+}
+.container--add--description > input::placeholder {
+  font-size: var(--text-size-title-3);
+}
+.container--add--description > label {
+  padding-bottom: 1rem;
+}
+.container--add--description > span {
+  font-size: var(--text-size-title-4);
+  color: var(--color-grey-3);
+  padding-top: 0.5rem;
+}
+.container--choice--info {
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  gap: 2.25rem;
+}
+.choice--value {
+  width: 8rem;
+  height: 100%;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+.choice--value > input {
+  width: 100%;
+  height: 3rem;
+
+  padding-left: 0.5rem;
+
+  font-size: var(--text-size-title-3);
+
+  background: var(--color-grey-2);
+  border: none;
+  border-radius: var(--default-radius);
+}
+.choice--value > input::placeholder {
+  font-size: var(--text-size-title-3);
+}
+.choice--type {
+  width: 8rem;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.choice--type > select {
+  width: 100%;
+  height: 3rem;
+  font-size: var(--text-size-title-3);
+
+  background: var(--color-grey-2);
+  border: none;
+  border-radius: var(--default-radius);
+}
+
+.button--send {
+  width: 100%;
+  height: 48px;
+
+  border: none;
+  border-radius: var(--default-radius);
+  background: var(--color-primary);
+
+  font-size: var(--text-size-title-3);
+  color: var(--color-grey-1);
+
+  cursor: pointer;
+}
+.button--send:hover{
+  background: var(--color-primary-2);
+  transition: 500ms;
+}
+
+select option:hover{
+  background-color: var(--color-grey-3);
+  transition: 500ms;
+}
