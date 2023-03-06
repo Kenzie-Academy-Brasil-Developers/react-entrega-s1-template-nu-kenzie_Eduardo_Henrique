@@ -1,4 +1,4 @@
-.card--item{
+.card--item--expenses{
   width: 100%;
   min-height: 155px;
 
@@ -7,7 +7,7 @@
   background: var(--color-grey-2);
   color: var(--color-grey-4);
 
-  border-left: 5px solid var(--color-secondary);
+  border-left: 5px solid var(--color-grey-3);
   border-radius: var(--default-radius);
 }
 .container--content{
@@ -42,11 +42,11 @@
   cursor: pointer;
 }
 @media(min-width:768px){
-  .card--item{
+  .card--item--expenses{
     position: relative;
     min-height: 85px;
   }
-  .card--item:hover{
+  .card--item--expenses:hover{
     background-color: var(--color-grey-1);
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.54);
     transition: 500ms;

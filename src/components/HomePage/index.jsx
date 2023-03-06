@@ -1,5 +1,5 @@
 import Logo from "../../assets/Nu Kenzie.svg";
-import ImageGroup from "../../assets/group262.svg";
+import ImageGroup from "../../assets/Group262.svg";
 export function HomePage({ setPage }) {
   return (
     <main className="container--page">

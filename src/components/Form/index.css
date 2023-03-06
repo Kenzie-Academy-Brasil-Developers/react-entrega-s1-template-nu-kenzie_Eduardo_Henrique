@@ -1,6 +1,6 @@
 .form--content {
   width: 100%;
-  
+
   display: flex;
   flex-direction: column;
 
@@ -72,6 +72,11 @@
   border: none;
   border-radius: var(--default-radius);
 }
+.choice--value > input::-webkit-outer-spin-button,
+.choice--value > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .choice--value > input::placeholder {
   font-size: var(--text-size-title-3);
 }
@@ -106,12 +111,12 @@
 
   cursor: pointer;
 }
-.button--send:hover{
+.button--send:hover {
   background: var(--color-primary-2);
   transition: 500ms;
 }
 
-select option:hover{
+select option:hover {
   background-color: var(--color-grey-3);
   transition: 500ms;
 }

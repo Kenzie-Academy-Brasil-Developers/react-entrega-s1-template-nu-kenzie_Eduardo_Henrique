@@ -2,14 +2,14 @@ import './index.css'
 export function CartValue({items}){
   //fazer um map para os de saida e para os de entrada e logo apos subtrair eles
     const itemValueEnter = items.map(item =>
-      item.typeValue == 'entrada' && item.value)
+      item.typeValue == 'Entrada' && item.value)
       
     const someValueEnter = itemValueEnter.reduce((valueOld,valueNew)=>{
        return valueOld + valueNew
     })
     
     const itemValueExit = items.map(item =>
-        item.typeValue == 'despesa' && item.value)
+        item.typeValue == 'Despesa' && item.value)
 
     const someValueExit = itemValueExit.reduce((valueOld,valueNew)=>{
        return valueOld + valueNew

@@ -4,7 +4,7 @@ import "./index.css";
 export function Form({ setItems, items }) {
   const [name, setName] = useState("");
   const [value, setValue] = useState(0);
-  const [typeValue, setTypeValue] = useState("entrada");
+  const [typeValue, setTypeValue] = useState("Entrada");
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -18,6 +18,7 @@ export function Form({ setItems, items }) {
 
     const tempItems = [...items, newItem];
     setItems(tempItems);
+
   }
 
   return (
@@ -29,7 +30,7 @@ export function Form({ setItems, items }) {
           placeholder="Digite aqui sua descrição"
           id="Description"
           onChange={(event) => setName(event.target.value)}
-          required="true"
+          required={true}
         />
         <span>Ex: Compra de roupas</span>
       </div>
@@ -37,11 +38,12 @@ export function Form({ setItems, items }) {
         <div className="choice--value">
           <label htmlFor="Value">Valor</label>
           <input
-            type="text"
+            type="number"
+            step={0.01}
             placeholder="1,00 R$"
             id="Value"
             onChange={(event) => setValue(event.target.value)}
-            required="true"
+            required={true}
           />
         </div>
         <div className="choice--type">
@@ -51,8 +53,8 @@ export function Form({ setItems, items }) {
             id="TypeValue"
             onChange={(event) => setTypeValue(event.target.value)}
           >
-            <option value="entrada">Entrada</option>
-            <option value="despesa">Despesa</option>
+            <option value="Entrada">Entrada</option>
+            <option value="Despesa">Despesa</option>
           </select>
         </div>
       </div>
