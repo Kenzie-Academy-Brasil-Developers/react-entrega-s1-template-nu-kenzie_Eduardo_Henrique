@@ -2,10 +2,12 @@ import "./index.css";
 import { FaTrash } from 'react-icons/fa'
 
 export function Cards({ name, value, typeValue, id, items, setItems }) {
-  function removeItem(event) {
-    const item = items.filter((item) => item.uuid !== event);
+  
+  function removeItem(idItem) {
+    const item = items.filter((item) => item.uuid !== idItem);
     setItems(item);
   }
+  
   return (
     <li className="card--item">
       <div className="container--content">

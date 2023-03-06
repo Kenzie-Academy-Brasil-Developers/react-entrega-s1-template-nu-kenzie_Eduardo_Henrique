@@ -1,17 +1,17 @@
 import { useState } from "react";
 import { Cards } from "../CardList";
 import { CartValue } from "../CartValue";
+import Logo from "../../assets/NuKenzie2.svg"
 import { Form } from "../Form";
 import "./index.css";
 
 export function Dashboard({ setPage }) {
   const [items, setItems] = useState([]);
-  console.log(items.length);
   return (
     <div className="div--container--dashboard">
       <header className="container--header">
         <nav className="nav--menu">
-          <img src="../src/assets/NuKenzie2.svg" alt="" />
+          <img src={ Logo } alt="" />
 
           <button type="button" onClick={setPage}>
             Inicio

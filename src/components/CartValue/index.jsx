@@ -14,7 +14,6 @@ export function CartValue({items}){
     const someValueExit = itemValueExit.reduce((valueOld,valueNew)=>{
        return valueOld + valueNew
     })
-    console.log(itemValueEnter,itemValueExit)
 
     const subTotal = someValueEnter - someValueExit
   

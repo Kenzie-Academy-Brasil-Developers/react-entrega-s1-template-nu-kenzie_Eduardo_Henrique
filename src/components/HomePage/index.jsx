@@ -1,8 +1,10 @@
+import Logo from "../../assets/Nu Kenzie.svg";
+import ImageGroup from "../../assets/group262.svg";
 export function HomePage({ setPage }) {
   return (
     <main className="container--page">
       <div className="content--info--page">
-        <img src="../src/assets/Nu Kenzie.svg" alt="" />
+        <img src={Logo} alt="" />
         <h1>Centralize o controle das suas financias</h1>
         <span>de forma rápida e segura</span>
         <div className="container--button">
@@ -12,7 +14,7 @@ export function HomePage({ setPage }) {
         </div>
       </div>
       <div className="container--image">
-        <img src="../src/assets/group262.svg" alt="" />
+        <img src={ImageGroup} alt="" />
       </div>
     </main>
   );
